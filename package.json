@@ -2,9 +2,10 @@
   "name": "stencil-createref",
   "version": "1.0.0",
   "description": "This simple implementation of React.CreateRef in StencilJS app.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "stencil",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jeanbenitez/stencil-createref/issues"
   },
-  "homepage": "https://github.com/jeanbenitez/stencil-createref#readme"
+  "homepage": "https://github.com/jeanbenitez/stencil-createref#readme",
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  }
 }
