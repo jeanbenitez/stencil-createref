@@ -1,8 +1,6 @@
-export function createRef<T>() {
-    return (() => {
-        const _fn: any = (current: T) => {
-            _fn.current = current;
-        };
-        return _fn;
-    })() as { (el: T): void; current?: T };
+export function createRef<T = HTMLElement>() {
+    const _fn: { (elm: T): void; current?: T } = (current: T) => {
+        _fn.current = current;
+    };
+    return _fn;
 }
