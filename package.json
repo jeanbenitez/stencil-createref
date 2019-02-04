@@ -1,6 +1,6 @@
 {
   "name": "stencil-createref",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This simple implementation of React.CreateRef in StencilJS app.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
