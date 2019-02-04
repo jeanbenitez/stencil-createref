@@ -11,14 +11,14 @@ npm i stencil-createref
 ```
 
 ```tsx
-import createRef from 'stencil-createref'
+import { createRef } from 'stencil-createref'
 
 @Component({
     tag: 'my-component',
     styleUrl: 'my-component.css'
 })
 class MyComponent {
-  textInput = createRef();
+  textInput = createRef<HTMLInputElement>();
 
   focusTextInput = () => {
     this.textInput.current.focus();
